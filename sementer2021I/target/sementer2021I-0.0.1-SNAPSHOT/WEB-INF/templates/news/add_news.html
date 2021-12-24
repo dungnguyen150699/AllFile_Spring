@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{%url 'news:save'%}" method="post">
+    {{f.title}} </br>
+    {{f.content}}</br>
+    {{f.time_create}}
+
+    {% csrf_token %}
+    <input type="submit" value="them"/>
+</form>
+</body>
+</html>

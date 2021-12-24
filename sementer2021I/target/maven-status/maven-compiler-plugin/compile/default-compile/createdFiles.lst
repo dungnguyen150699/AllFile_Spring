@@ -1,0 +1,10 @@
+xulyform\entities\BaseEntity.class
+xulyform\model\user.class
+xulyform\controller\LoginController.class
+xulyform\config\JPAConfig.class
+xulyform\entities\UserEntity.class
+xulyform\dao\UserDAO.class
+xulyform\config\JpaAuditingConfig.class
+xulyform\repository\UserRepository.class
+xulyform\dao\DAO.class
+xulyform\config\JpaAuditingConfig$AuditorAwareImpl.class

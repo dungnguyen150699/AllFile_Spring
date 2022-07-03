@@ -1,0 +1,10 @@
+Class:MProductController
+	 Url: /admin/product
+	 Method Name: manageProduct
+	 Object Agurment: 
+		{};
+Class:MProductController
+	 Url: /admin/product/update/3
+	 Method Name: updateForm
+	 Object Agurment: 
+		{};		3;

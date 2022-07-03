@@ -1,0 +1,15 @@
+Class:MProductController
+	 Url: /admin/product
+	 Method Name: manageProduct
+	 Object Agurment: 
+		{};
+Class:MProductController
+	 Url: /admin/product/delete/10
+	 Method Name: deleteProduct
+	 Object Agurment: 
+		{};		10;
+Class:MProductController
+	 Url: /admin/product
+	 Method Name: manageProduct
+	 Object Agurment: 
+		{};

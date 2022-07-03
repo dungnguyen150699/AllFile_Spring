@@ -1,0 +1,2 @@
+2022-05-03 16:21:01,965 WARN com.java8.springboot.spring.EncyptevsDecypt.Base64.ShowImageController [http-nio-8080-exec-5] Example log from Example
+2022-05-03 16:21:01,966 ERROR com.java8.springboot.spring.EncyptevsDecypt.Base64.ShowImageController [http-nio-8080-exec-5] Example log trace from ShowImageController

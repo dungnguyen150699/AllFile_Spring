@@ -1,0 +1,16 @@
+
+Class:UserController
+	 Url: /login
+	 Method Name: loginView
+	 Object Agurment: 
+		{};		org.apache.catalina.session.StandardSessionFacade@3852bb04;
+Class:UserController
+	 Url: /dologin
+	 Method Name: doLogin
+	 Object Agurment: 
+		org.apache.catalina.session.StandardSessionFacade@3852bb04;		{};
+Class:UserController
+	 Url: /admin/users
+	 Method Name: ManageUser
+	 Object Agurment: 
+		{};

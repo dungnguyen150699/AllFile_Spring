@@ -1,0 +1,5 @@
+Class:UserController
+	 Url: /admin/users
+	 Method Name: ManageUser
+	 Object Agurment: 
+		{};

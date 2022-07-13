@@ -9,6 +9,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.demo.entity.Product;
@@ -16,6 +18,7 @@ import com.example.demo.repository.ProductRepository;
 import com.example.demo.repository.UserRepository;
 
 @Service
+@Transactional
 public class ProductService {
 
 	public ProductService(){
@@ -61,5 +64,21 @@ public class ProductService {
 	
 	public void deleteById(int id) {
 		productRepo.deleteById(id);
+	}
+	
+	@Transactional
+	public void loopSave() {
+		for(int i = 1 ; i<=3 ;i++) {
+			Product p = new Product();
+			p.setId(100000);
+			p.setName("dung"+i);
+			saveProduct(p);
+		}
+		throw new RuntimeException();
+	}
+	
+//	@Transactional(propagation = Propagation.REQUIRED)
+	public void callLoopSave() {
+		loopSave();
 	}
 }

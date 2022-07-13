@@ -40,7 +40,7 @@ public class equal_hashcode{
     
 	public static void main(String[] args) {
 		equal_hashcode equal_hashcode1 = new equal_hashcode(123, "Cong");
-        equal_hashcode equal_hashcode2 = new equal_hashcode(123, "Cong");
+        equal_hashcode equal_hashcode2 = new equal_hashcode(123, "Congxxx");
         equal_hashcode equal_hashcode3 = new equal_hashcode(456, "Dung");
  
         Set<equal_hashcode> setequal_hashcodes = new HashSet<equal_hashcode>();

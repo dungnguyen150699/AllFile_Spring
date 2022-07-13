@@ -30,11 +30,11 @@ public class OrderDetail implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "product_id")
 	private Product product;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "order_id")
 	private Order order;
 	
@@ -42,7 +42,7 @@ public class OrderDetail implements Serializable{
 	private int count=0;
 	
 	@Column(name = "price")
-	private double price;
+	private Double price;
 
 	public double getPrice() {
 		return price;

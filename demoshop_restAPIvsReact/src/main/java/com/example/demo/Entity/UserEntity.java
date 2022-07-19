@@ -78,10 +78,12 @@ public class UserEntity implements Serializable {
 	@OneToMany(mappedBy = "user",cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private List<OrderEntity> orders = new ArrayList<OrderEntity>();
 	
-	//@JoinColumnchỉ ra rằng thực thể này là chủ sở hữu của mối quan hệ
+	//@JoinColumn chỉ ra rằng thực thể này là chủ sở hữu của mối quan hệ
 	//mappedBy chỉ ra rằng thực thể ở bên này là nghịch đảo của mối quan hệ và chủ sở hữu cư trú trong thực thể "khác"
 	@ManyToMany(cascade= CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinTable(name="user_role",joinColumns = @JoinColumn(name="user_id"),inverseJoinColumns = @JoinColumn(name="role_id"))
-	private Set<RoleEntity> roles;
+	private Set<RoleEntity> roles;// Thêm CascadeType ở user để khi thêm user thì cũng thêm user_role
 
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
+	private Date date;
 }

@@ -46,11 +46,15 @@ public class Wrapper {
 		Wrapper wp = new Wrapper();
 //		wp.convertToInteger();
 //		Arrays.stream(wp.getX()).forEach(System.out :: print);
-		Arrays.stream(wp.toObjects(b1)).forEach(System.out :: print);
-		System.out.println();
-		for(byte i : b ) {
-			System.out.print( + i);
-		}
+//		Arrays.stream(wp.toObjects(b1)).forEach(System.out :: print);
+//		System.out.println();
+//		for(byte i : b ) {
+//			System.out.print( + i);
+//		}
 		
+		Integer x = 9;
+		int x1 = 10;
+		x = x1;
+		System.out.println(x + "--" + x1);
 	}
 }

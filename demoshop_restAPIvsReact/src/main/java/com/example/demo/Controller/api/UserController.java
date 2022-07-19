@@ -42,7 +42,7 @@ import com.example.demo.Entity.RoleEntity;
 import com.example.demo.Entity.UserEntity;
 
 @Controller
-@RequestMapping("user")
+@RequestMapping("/user")
 @CrossOrigin(origins= {"*"})
 @RequiredArgsConstructor
 public class UserController {

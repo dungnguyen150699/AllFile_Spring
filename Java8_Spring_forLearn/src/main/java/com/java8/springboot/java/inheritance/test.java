@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class test implements Serializable {
 	private Integer x ;
+	
+	private int intX;
 		
 	private String str ;
 	
@@ -42,27 +44,28 @@ public class test implements Serializable {
 	public test() {};
 
 	public static void main(String...strings ) {
-//		test t = new test();
+		test t = new test();
+		System.out.println(t.x + "----" + t.intX); // nếu là wrapper thì là null int thì = 0;
 //		t.setX(null);
 //		System.out.println(t.getX() != null);
 //		System.out.println(t.getStr() == null);
 //		System.out.println(t.getL());
-		try {
-			try {
-			throw new Exception();
-			}
-			catch (Exception e) {
-				// TODO: handle exception
-				System.out.println("xxx");
-			}
-		}
-		catch (Exception e) {
-			// TODO: handle exception
-			System.out.println("xxx");
-		}
-		finally {
-			System.out.println("hehe");
-		}
+//		try {
+//			try {
+//			throw new Exception();
+//			}
+//			catch (Exception e) {
+//				// TODO: handle exception
+//				System.out.println("xxx");
+//			}
+//		}
+//		catch (Exception e) {
+//			// TODO: handle exception
+//			System.out.println("xxx");
+//		}
+//		finally {
+//			System.out.println("hehe");
+//		}
 		
 	}
 }

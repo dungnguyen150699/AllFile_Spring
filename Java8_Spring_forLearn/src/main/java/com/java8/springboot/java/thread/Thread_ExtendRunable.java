@@ -20,7 +20,7 @@ public class Thread_ExtendRunable implements Runnable {
 		try {
 			// Displaying the thread that is running
 			System.out.println("Thread " + Thread.currentThread().getId() + " is running");
-			list.add(Thread.currentThread().getId() + "ArrayList");
+//			list.add(Thread.currentThread().getId() + "ArrayList");
 			vector.add(Thread.currentThread().getId() + "Vector");
 			System.out.println("ok");
 		} catch (Exception e) {
@@ -41,11 +41,11 @@ class Multithread1 {
 		list.add("List Synchronized Begin");
 		vector.add("Vector Synchronized Begin");
 		int n = 8; // Number of threads
-		new Thread(new Thread_ExtendRunable(list,vector));
-//		for (int i = 0; i < n; i++) {
-//			Thread object = new Thread(new Thread_ExtendRunable(list,vector));
-//			object.start();
-//		}
+//		new Thread(new Thread_ExtendRunable(list,vector));
+		for (int i = 0; i < n; i++) {
+			Thread object = new Thread(new Thread_ExtendRunable(list,vector));
+			object.start();
+		}
 		list.add("List Synchronized end");
 		vector.add("Vector Synchronized end");
 		System.out.println(list.toString());
